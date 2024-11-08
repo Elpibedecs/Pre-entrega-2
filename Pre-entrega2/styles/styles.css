@@ -1,0 +1,278 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+                                               /*-----------CODIGO COMPARTIDO----------*/
+main, a
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navbar
+{
+    background-color:rgba(13, 190, 37, 0.781);
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar img
+{
+    width: 90px;
+    height: 50px;
+    margin-left: 70px;
+}
+
+.navbar ul li
+{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar ul li a
+{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #44444498;
+    font-size: 20px;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 50px;
+    border-radius: 30px;
+}
+
+.fondo
+{
+    background-image: url(https://wallpapers.com/images/hd/gaming-room-all-green-lights-si4ds5xamzvzjh7q.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70%;
+    filter: blur(5px);
+}
+
+footer
+{
+    background-color: #161616;
+    width: 100%;
+    height:35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+footer h1
+{
+    width: 30%;
+    height: 17%;
+    background-color: rgba(13, 190, 37, 0.808);
+    color: white;
+    border-radius: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 25px;
+}
+
+footer h1 a
+{
+    text-decoration: none;
+    color: white;
+}
+
+                                                 /*---------------------CODIGO INDEX----------------*/
+
+.ofertas
+{
+    background-color: #292929;
+    padding: 50px;
+}
+
+.titulo
+{
+    background-color: rgba(13, 190, 37, 0.342);
+    width: 50%;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 40px;
+    margin-left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cajas
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 60%;
+
+}
+
+.caja
+{
+    background-color: rgb(255, 255, 255);
+    width: 13%;
+    height: 53%;
+    margin-top: 100px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.caja_imagen img
+{
+    width: 85%;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.caja_precio--descuento::after
+{
+    content: '-20%';
+    color: green;
+}
+
+.caja_info-offer::after
+{
+    content:'Oferta del mes';
+    color: white;
+    background-color:rgb(13, 190, 37);
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.caja_pequenia
+{
+    width: 12%;
+    height: 45%;
+}
+
+.caja_pequenia img
+{
+    width: 65%;
+    height: 90%;
+    margin-bottom: 10px;
+}
+
+.bloques
+{
+    width: 50%;
+    height: 65%;
+    background-color: rgba(0, 0, 0, 0.205);
+    margin:0 auto;
+    margin-bottom: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    justify-content: space-around;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+.bloque
+{
+    width: 40%;
+    height: 46%;
+    background-color: rgba(13, 190, 37, 0.5);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.bloque img
+{
+    width: 90%;
+    height: 90%;
+}
+
+.bloque h1
+{
+    color: #444;
+}
+
+
+/**DESKTOP**/
+
+.ventas
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 50px;
+    margin-bottom: 0px;
+}
+
+.caja_grande
+{
+    background-color: #4444444b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 40px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.imagen_pc img
+{
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;
+}
+
+.info_pc h3
+{
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 70px;
+    text-align: center;
+
+
+}
+
+.info_pc ul
+{
+    border: solid white;
+    background-color: white;
+    color: gray;
+    font-size: 15px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+/**Media quaries index**/
+
+@media only screen and (max-width: 991px)
+{
+    
+    .cajas
+    {
+        flex-wrap: wrap;
+        height: 80%;
+    }
+    .caja
+    {
+        width: 20%;
+        height: 33%;
+    }
+
+    .caja_pequenia
+    {
+        height: 30%;
+    }
+
+    .bloques
+    {
+        width: 90%;
+    }   
+}
